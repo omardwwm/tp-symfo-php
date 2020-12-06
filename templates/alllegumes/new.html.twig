@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Alllegumes{% endblock %}
+
+{% block body %}
+    <h1>Create new Alllegumes</h1>
+
+    {{ include('alllegumes/_form.html.twig') }}
+
+    <a href="{{ path('alllegumes_index') }}">back to list</a>
+{% endblock %}

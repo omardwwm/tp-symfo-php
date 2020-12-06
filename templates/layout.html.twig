@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+ <div id="header">
+  <nav>
+   <ul>
+    <li><a href="{{ path('index') }}" >Accueil</a></li>
+    <li><a href="{{ path('alllegumes_index') }}" >Par legume</a></li>
+    <li><a href="{{ path('mois_index') }}">Par mois</a></li>
+
+   </ul>
+  </nav>
+ </div>
+
+ <div id="main">
+
+  {% block main %}
+   <h2>Calendrier des legumes</h2>
+   <img src="{{ asset("images/panier-legume.jpg") }}" alt="panier legume" id="picPanier">
+   <p>Choisissez vos legumes de saison ! C'est bon pour la sante et l'environnement ! </p>
+  {% endblock %}
+
+ </div>
+
+
+{% endblock %}
