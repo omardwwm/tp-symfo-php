@@ -11,13 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e720e43-c5c7-40ef-b6bc-8a6a90984206" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/tp-legumes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tp-legumes.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alllegumes/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alllegumes/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mois/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mois/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607208636619</updated>
-      <workItem from="1607208638562" duration="30899000" />
+      <workItem from="1607208638562" duration="37262000" />
     </task>
     <servers />
   </component>
@@ -165,9 +160,9 @@
       <screen x="0" y="0" width="3840" height="2060" />
     </state>
     <state x="1028" y="424" key="NewPhpClassDialog/0.0.3840.2060/9600.1290.4800.2600@0.0.3840.2060" timestamp="1607217296853" />
-    <state x="9941" y="1466" width="3672" height="1892" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1607227133557">
+    <state x="9941" y="1466" width="3672" height="1892" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1607294166081">
       <screen x="9600" y="1290" width="4800" height="2600" />
     </state>
-    <state x="9941" y="1466" width="3672" height="1892" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.3840.2060/9600.1290.4800.2600@0.0.3840.2060" timestamp="1607227133557" />
+    <state x="9941" y="1466" width="3672" height="1892" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.3840.2060/9600.1290.4800.2600@0.0.3840.2060" timestamp="1607294166081" />
   </component>
 </project>
