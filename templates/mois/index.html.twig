@@ -9,10 +9,10 @@
         <p>
             Les legumes par mois
         </p>
-        <div id="listMois">
+        <div id="listMois" class="listmois">
             <ul>
                 {% for moi in mois %}
-                    <li>
+                    <li id="{{ moi.nom }}">
                         <a href="{{ path('mois_show', {'id': moi.id}) }}">{{ moi.nom }}</a>
                     </li>
                 {% endfor %}
@@ -49,4 +49,6 @@
 {#    </table>#}
 
     <a href="{{ path('mois_new') }}">Create new</a>
+
 {% endblock %}
+{#{% block javascripts %}<script src="javascript.js"></script>{% endblock %}#}
