@@ -19,7 +19,7 @@ p{
     color: #000000;
     font-size: 1.2rem;
     background: #FFFFFF;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 #header ul{
     display:flex;
