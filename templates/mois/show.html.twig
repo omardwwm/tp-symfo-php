@@ -14,7 +14,7 @@
             {% set bgcolor = "bgColorPrintemps" %}
     {% endif %}
     <div class="{{ bgcolor }}">
-        <h1>On est en: {{ moi.season.nom}}</h1>
+        <p id="pSaison"><strong>On est en: {{ moi.season.nom}}</strong></p>
         {% if  moi.season.nom == 'Hiver' %}
             <p>Y'a pas mieux que pour rechauffer le corps et les coeurs</p>
         {% elseif moi.season.nom == 'Ete' %}
@@ -24,7 +24,7 @@
         {% elseif moi.season.nom == 'Printemps' %}
             <p>Meme si on cultive plus en printemps, on recolte aussi de bons produits, Profitez ! </p>
         {% endif %}
-        <h2>On est ravi de vous presenter les fruits et legumes du mois de : {{ moi.nom }}</h2>
+        <p>On est ravi de vous presenter les fruits et legumes du mois de : {{ moi.nom }}</p>
 
         <div id="listMois" class="listmois">
             <ul>

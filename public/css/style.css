@@ -8,6 +8,19 @@
 #header{
     background-color: #613bde;
 }
+#pSaison{
+    color: #2468de;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #FFFFFF;
+    display: block;
+}
+p{
+    color: #000000;
+    font-size: 1.2rem;
+    background: #FFFFFF;
+    display: inline-block;
+}
 #header ul{
     display:flex;
     justify-content:center;
@@ -17,12 +30,15 @@
     list-style-type: none;
 }
 a{
-    color: #64e111;
+    color: #f5c106;
+    font-size: 1.08rem;
+    text-decoration: none;
 }
 #picPanier{
-    width: 50%;
-    height: 400px;
+    width: 90%;
+    height: 600px;
     /*border: 1px solid #4922e2;*/
+    margin: auto;
 }
 .listmois{
     display: flex;
@@ -45,16 +61,34 @@ a{
 .bgColorEte{
     background-color: #B0413E;
     min-height: calc(100vh - 150px);
-    background-image: url("");
+    background-image: url("../images/ete.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
 }
 .bgColorHiver{
     background-color: #4f4b4b;
+     min-height: calc(100vh - 150px);
+    background-image: url("../images/hiver.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
 }
 .bgColorPrintemps{
     background-color: #a3b453;
+     min-height: calc(100vh - 150px);
+    background-image: url("../images/spring.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.65;
 }
 .bgColorAutomne{
     background-color: #d0b055;
+     min-height: calc(100vh - 150px);
+    background-image: url("../images/automne.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.85;
 }
 #footer{
     background-color: #38d19e;
