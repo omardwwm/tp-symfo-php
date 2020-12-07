@@ -13,7 +13,10 @@
     <list default="true" id="9e720e43-c5c7-40ef-b6bc-8a6a90984206" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/alllegumes/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alllegumes/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Alllegumes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Alllegumes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Saisons.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Saisons.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/AlllegumesType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AlllegumesType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SaisonsType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SaisonsType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/alllegumes/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alllegumes/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mois/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mois/show.html.twig" afterDir="false" />
     </list>
@@ -137,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607208636619</updated>
       <workItem from="1607208638562" duration="54994000" />
-      <workItem from="1607328155391" duration="3773000" />
+      <workItem from="1607328155391" duration="10598000" />
     </task>
     <servers />
   </component>

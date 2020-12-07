@@ -14,6 +14,8 @@ class AlllegumesType extends AbstractType
         $builder
             ->add('nom')
             ->add('mounth')
+            ->add('slogan')
+            ->add('recettes')
         ;
     }
 

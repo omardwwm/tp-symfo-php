@@ -29,6 +29,16 @@ class Alllegumes
      */
     private $mounth;
 
+    /**
+     * @ORM\Column(type="string", length=500)
+     */
+    private $slogan;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $recettes;
+
     public function __construct()
     {
         $this->mounth = new ArrayCollection();
@@ -37,9 +47,9 @@ class Alllegumes
     public function __toString(){
         return $this->getNom();
     }
-
+//
 //    public function __toString(){
-//        return $this->getMounth();
+//        return $this->getRecettes();
 //    }
 
 
@@ -80,6 +90,30 @@ class Alllegumes
     public function removeMounth(Mois $mounth): self
     {
         $this->mounth->removeElement($mounth);
+
+        return $this;
+    }
+
+    public function getSlogan(): ?string
+    {
+        return $this->slogan;
+    }
+
+    public function setSlogan(string $slogan): self
+    {
+        $this->slogan = $slogan;
+
+        return $this;
+    }
+
+    public function getRecettes(): ?string
+    {
+        return $this->recettes;
+    }
+
+    public function setRecettes(string $recettes): self
+    {
+        $this->recettes = $recettes;
 
         return $this;
     }

@@ -29,6 +29,11 @@ class Saisons
      */
     private $lesmois;
 
+    /**
+     * @ORM\Column(type="string", length=500)
+     */
+    private $titre;
+
     public function __construct()
     {
         $this->lesmois = new ArrayCollection();
@@ -81,6 +86,18 @@ class Saisons
                 $lesmoi->setSeason(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getTitre(): ?string
+    {
+        return $this->titre;
+    }
+
+    public function setTitre(string $titre): self
+    {
+        $this->titre = $titre;
 
         return $this;
     }

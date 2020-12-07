@@ -3,27 +3,28 @@
 {% block title %}Mois{% endblock %}
 
 {% block main %}
-    {% set bgcolor = "test" %}
-    {% if moi.season.nom == "Hiver"%}
-            {% set bgcolor = "bgColorHiver" %}
-        {% elseif moi.season.nom == "Ete" %}
-            {% set bgcolor = "bgColorEte" %}
-        {% elseif moi.season.nom == "Automne" %}
-            {% set bgcolor = "bgColorAutomne" %}
-        {% elseif moi.season.nom == "Printemps" %}
-            {% set bgcolor = "bgColorPrintemps" %}
-    {% endif %}
-    <div class="{{ bgcolor }}">
+{#    {% set bgcolor = "test" %}#}
+{#    {% if moi.season.nom == "Hiver"%}#}
+{#            {% set bgcolor = "bgColorHiver" %}#}
+{#        {% elseif moi.season.nom == "Ete" %}#}
+{#            {% set bgcolor = "bgColorEte" %}#}
+{#        {% elseif moi.season.nom == "Automne" %}#}
+{#            {% set bgcolor = "bgColorAutomne" %}#}
+{#        {% elseif moi.season.nom == "Printemps" %}#}
+{#            {% set bgcolor = "bgColorPrintemps" %}#}
+{#    {% endif %}#}
+    <div class="bgColor{{moi.season.nom}}">
         <p id="pSaison"><strong>On est en: {{ moi.season.nom}}</strong></p>
-        {% if  moi.season.nom == 'Hiver' %}
-            <p>Y'a pas mieux que pour rechauffer le corps et les coeurs</p>
-        {% elseif moi.season.nom == 'Ete' %}
-            <p>Pour vous reaffrichir, mieux que les glaces ! </p>
-        {% elseif moi.season.nom == 'Automne' %}
-            <p>La saison des meilleurs produits ! </p>
-        {% elseif moi.season.nom == 'Printemps' %}
-            <p>Meme si on cultive plus en printemps, on recolte aussi de bons produits, Profitez ! </p>
-        {% endif %}
+        <p>{{ moi.season.titre }}</p>
+{#        {% if  moi.season.nom == 'Hiver' %}#}
+{#            <p>Y'a pas mieux que pour rechauffer le corps et les coeurs</p>#}
+{#        {% elseif moi.season.nom == 'Ete' %}#}
+{#            <p>Pour vous reaffrichir, mieux que les glaces ! </p>#}
+{#        {% elseif moi.season.nom == 'Automne' %}#}
+{#            <p>La saison des meilleurs produits ! </p>#}
+{#        {% elseif moi.season.nom == 'Printemps' %}#}
+{#            <p>Meme si on cultive plus en printemps, on recolte aussi de bons produits, Profitez ! </p>#}
+{#        {% endif %}#}
         <p>On est ravi de vous presenter les fruits et legumes du mois de : <strong>{{ moi.nom }}</strong> </p>
 
         <div id="listMois" class="listmois">

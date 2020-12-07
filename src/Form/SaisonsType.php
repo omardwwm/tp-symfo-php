@@ -13,6 +13,7 @@ class SaisonsType extends AbstractType
     {
         $builder
             ->add('nom')
+            ->add('titre')
         ;
     }
 
