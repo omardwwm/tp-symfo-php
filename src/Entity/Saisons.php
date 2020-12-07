@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\SaisonsRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -22,6 +24,20 @@ class Saisons
      */
     private $nom;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Mois::class, mappedBy="season")
+     */
+    private $lesmois;
+
+    public function __construct()
+    {
+        $this->lesmois = new ArrayCollection();
+    }
+
+    public function __toString(){
+        return $this->getNom();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,6 +51,36 @@ class Saisons
     public function setNom(string $nom): self
     {
         $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Mois[]
+     */
+    public function getLesmois(): Collection
+    {
+        return $this->lesmois;
+    }
+
+    public function addLesmoi(Mois $lesmoi): self
+    {
+        if (!$this->lesmois->contains($lesmoi)) {
+            $this->lesmois[] = $lesmoi;
+            $lesmoi->setSeason($this);
+        }
+
+        return $this;
+    }
+
+    public function removeLesmoi(Mois $lesmoi): self
+    {
+        if ($this->lesmois->removeElement($lesmoi)) {
+            // set the owning side to null (unless already changed)
+            if ($lesmoi->getSeason() === $this) {
+                $lesmoi->setSeason(null);
+            }
+        }
 
         return $this;
     }

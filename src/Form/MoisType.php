@@ -14,6 +14,7 @@ class MoisType extends AbstractType
         $builder
             ->add('nom')
             ->add('legume')
+            ->add('season')
         ;
     }
 

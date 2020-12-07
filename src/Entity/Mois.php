@@ -29,6 +29,11 @@ class Mois
      */
     private $legume;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Saisons::class, inversedBy="lesmois")
+     */
+    private $season;
+
     public function __construct()
     {
         $this->legume = new ArrayCollection();
@@ -81,6 +86,18 @@ class Mois
         if ($this->legume->removeElement($legume)) {
             $legume->removeMounth($this);
         }
+
+        return $this;
+    }
+
+    public function getSeason(): ?Saisons
+    {
+        return $this->season;
+    }
+
+    public function setSeason(?Saisons $season): self
+    {
+        $this->season = $season;
 
         return $this;
     }

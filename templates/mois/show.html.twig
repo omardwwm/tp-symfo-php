@@ -5,6 +5,16 @@
 {% block main %}
     <h1>Mois</h1>
     <h2>Legumes au mois de {{ moi.nom }}</h2>
+    <p>{{ moi.season.nom}}</p>
+    {% if  moi.season.nom == 'Hiver' %}
+        <p>Y'a pas mieux que pour rechauffer le corps et les coeurs</p>
+        {% elseif moi.season.nom == 'Ete' %}
+            <p>Pour vous reaffrichir, mieux que les glaces ! </p>
+        {% elseif moi.season.nom == 'Automne' %}
+            <p>La saison des meilleurs produits ! </p>
+        {% elseif moi.season.nom == 'Printemps' %}
+            <p>Meme si on cultive plus en printemps, on recolte aussi de bons produits, Profitez ! </p>
+    {% endif %}
 
     {% for legume in moi.legume %}
     <p><a href="">{{ legume }}</a></p>

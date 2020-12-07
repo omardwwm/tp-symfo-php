@@ -8,7 +8,7 @@
     <table class="table">
         <thead>
             <tr>
-{#                <th>Id</th>#}
+                <th>Id</th>
                 <th>Nom</th>
                 <th>actions</th>
             </tr>
@@ -16,7 +16,7 @@
         <tbody>
         {% for alllegume in alllegumes %}
             <tr>
-{#                <td>{{ alllegume.id }}</td>#}
+                <td>{{ alllegume.id }}</td>
                 <td>{{ alllegume.nom }}</td>
                 <td>
                     <a href="{{ path('alllegumes_show', {'id': alllegume.id}) }}">show</a>
