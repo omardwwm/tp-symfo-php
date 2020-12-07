@@ -13,14 +13,16 @@
     <list default="true" id="9e720e43-c5c7-40ef-b6bc-8a6a90984206" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/alllegumes/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alllegumes/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/alllegumes/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/alllegumes/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mois/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mois/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -134,7 +136,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607208636619</updated>
-      <workItem from="1607208638562" duration="54282000" />
+      <workItem from="1607208638562" duration="54994000" />
+      <workItem from="1607328155391" duration="3773000" />
     </task>
     <servers />
   </component>
@@ -151,6 +154,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1374" y="418" key="FileChooserDialogImpl" timestamp="1607224865971">

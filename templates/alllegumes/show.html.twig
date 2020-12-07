@@ -3,8 +3,8 @@
 {% block title %}Alllegumes{% endblock %}
 
 {% block main %}
-    <h1>{{ alllegume.nom  }}</h1>
 
+    <h1>{{ alllegume.nom  }}</h1>
 {#    <table class="table">#}
 {#        <tbody>#}
 {#            <tr>#}
@@ -21,9 +21,10 @@
 
     <div id="listMois" class="listmois">
         <ul>
-            {% for m in alllegume.mounth %}
+            {% for mois in alllegume.mounth %}
+
                 <li>
-                    <a href="#">{{ m}}</a>
+                    <a href="{{ path('mois_show', {'id': mois.id}) }}">{{mois}}</a>
                 </li>
             {% endfor %}
         </ul>
@@ -42,7 +43,7 @@
         </div>
 
     </div>
-    <a href="{{ path('alllegumes_index') }}">test</a>
+{#    <a href="{{ path('alllegumes_index') }}">test</a>#}
     <a href="{{ path('alllegumes_index') }}">Retour a la liste des legumes</a>
 
 {#    <a href="{{ path('alllegumes_index') }}">back to list</a>#}
