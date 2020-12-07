@@ -3,7 +3,7 @@
 {% block title %}Alllegumes{% endblock %}
 
 {% block main %}
-    <h1>Alllegumes</h1>
+    <h1>{{ alllegume.nom  }}</h1>
 
 {#    <table class="table">#}
 {#        <tbody>#}
@@ -18,17 +18,19 @@
 {#        </tbody>#}
 {#    </table>#}
     <p>les <strong>{{ alllegume.nom  }}</strong> sont disponibles aux mois de:</p>
-    <ul>
-{#        <li>#}
+
+    <div id="listMois" class="listmois">
+        <ul>
             {% for m in alllegume.mounth %}
                 <li>
-                    <a href="">{{ m}}</a>
+                    <a href="#">{{ m}}</a>
                 </li>
-
             {% endfor %}
-{#        </li>#}
-    </ul>
+        </ul>
+    </div>
+    <a href="{{ path('alllegumes_index') }}">test</a>
     <a href="{{ path('alllegumes_index') }}">Retour a la liste des legumes</a>
+
 {#    <a href="{{ path('alllegumes_index') }}">back to list</a>#}
 
 {#    <a href="{{ path('alllegumes_edit', {'id': alllegume.id}) }}">edit</a>#}

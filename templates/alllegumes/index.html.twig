@@ -5,31 +5,41 @@
 {% block main %}
 {#    <h1>Alllegumes index</h1>#}
     <h1>Liste des legumes</h1>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nom</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for alllegume in alllegumes %}
-            <tr>
-                <td>{{ alllegume.id }}</td>
-                <td>{{ alllegume.nom }}</td>
-                <td>
-                    <a href="{{ path('alllegumes_show', {'id': alllegume.id}) }}">show</a>
-                    <a href="{{ path('alllegumes_edit', {'id': alllegume.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="3">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+    <div id="listMois" class="listmois">
+        <ul>
+            {% for alllegume in alllegumes %}
+                <li>
+                    <a href="{{ path('alllegumes_show', {'id': alllegume.id}) }}">{{ alllegume.nom }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+{#    <table class="table">#}
+{#        <thead>#}
+{#            <tr>#}
+{#                <th>Id</th>#}
+{#                <th>Nom</th>#}
+{#                <th>actions</th>#}
+{#            </tr>#}
+{#        </thead>#}
+{#        <tbody>#}
+{#        {% for alllegume in alllegumes %}#}
+{#            <tr>#}
+{#                <td>{{ alllegume.id }}</td>#}
+{#                <td>{{ alllegume.nom }}</td>#}
+{#                <td>#}
+{#                    <a href="{{ path('alllegumes_show', {'id': alllegume.id}) }}">show</a>#}
+{#                    <a href="{{ path('alllegumes_edit', {'id': alllegume.id}) }}">edit</a>#}
+{#                </td>#}
+{#            </tr>#}
+{#        {% else %}#}
+{#            <tr>#}
+{#                <td colspan="3">no records found</td>#}
+{#            </tr>#}
+{#        {% endfor %}#}
+{#        </tbody>#}
+{#    </table>#}
 
     <a href="{{ path('alllegumes_new') }}">Create new</a>
 {% endblock %}

@@ -39,7 +39,7 @@ class Alllegumes
     }
 
 //    public function __toString(){
-//        return $this->addMounth();
+//        return $this->getMounth();
 //    }
 
 

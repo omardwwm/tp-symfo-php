@@ -1,5 +1,9 @@
 #main{
     min-height: calc(100vh - 150px);
+    background: #FFFFFF;
+}
+#hivercolor{
+    min-height: calc(100vh - 150px);
 }
 #header{
     background-color: #613bde;
@@ -37,8 +41,20 @@ a{
     text-decoration: none;
     background-color: #613bde;
 }
-#janvier{
+
+.bgColorEte{
     background-color: #B0413E;
+    min-height: calc(100vh - 150px);
+    background-image: url("");
+}
+.bgColorHiver{
+    background-color: #4f4b4b;
+}
+.bgColorPrintemps{
+    background-color: #a3b453;
+}
+.bgColorAutomne{
+    background-color: #d0b055;
 }
 #footer{
     background-color: #38d19e;
