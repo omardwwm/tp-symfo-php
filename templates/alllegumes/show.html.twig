@@ -17,22 +17,23 @@
 {#            </tr>#}
 {#        </tbody>#}
 {#    </table>#}
-    <p>les <strong>{{ alllegume.nom  }}</strong> sont disponibles aux mois de:</p>
-    <div id="listMois" class="listmois">
-        <ul>
+    <h3>les <strong>{{ alllegume.nom  }}</strong> sont disponibles aux mois de:</h3>
+    <div id="listMois" class="listmois row">
+        <ul class="col-12">
             {% for mois in alllegume.mounth %}
-                <li>
+                <li class="col-3">
                     <a href="{{ path('mois_show', {'id': mois.id}) }}">{{mois}}</a>
                 </li>
             {% endfor %}
         </ul>
-        <div>
-            <h4>Presentation : {{ alllegume.nom }}</h4>
-            <p>{{ alllegume.slogan }}</p>
-            <h4>Subblimer notre {{ alllegume.nom }} avec nos recettes </h4>
-            <h5>Recette</h5>
-            <p>{{ alllegume.recettes }}</p>
-        </div>
+
+    </div>
+    <div>
+        <h4>Presentation : {{ alllegume.nom }}</h4>
+        <p>{{ alllegume.slogan }}</p>
+        <h4>Subblimer notre {{ alllegume.nom }} avec nos recettes </h4>
+        <h5>Recette</h5>
+        <p>{{ alllegume.recettes }}</p>
     </div>
 {#    <a href="{{ path('alllegumes_index') }}">test</a>#}
     <a href="{{ path('alllegumes_index') }}">Retour a la liste des legumes</a>

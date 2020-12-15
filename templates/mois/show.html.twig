@@ -13,8 +13,10 @@
 {#        {% elseif moi.season.nom == "Printemps" %}#}
 {#            {% set bgcolor = "bgColorPrintemps" %}#}
 {#    {% endif %}#}
+
     <div class="bgColor{{moi.season.nom}}">
-        <p id="pSaison"><strong>On est en: {{ moi.season.nom}}</strong></p>
+        <div><p id="pSaison"><strong>C'est la saison: {{ moi.season.nom}}</strong></p></div>
+
         <p>{{ moi.season.titre }}</p>
 {#        {% if  moi.season.nom == 'Hiver' %}#}
 {#            <p>Y'a pas mieux que pour rechauffer le corps et les coeurs</p>#}
@@ -27,10 +29,10 @@
 {#        {% endif %}#}
         <p>On est ravi de vous presenter les fruits et legumes du mois de : <strong>{{ moi.nom }}</strong> </p>
 
-        <div id="listMois" class="listmois">
-            <ul>
+        <div id="listMois" class="listmois row">
+            <ul class="col-12">
                 {% for legume in moi.legume %}
-                    <li>
+                    <li class="col-2">
                         <a href="{{ path('alllegumes_show', { 'id': legume.id}) }}">{{ legume }}</a>
                     </li>
                 {% endfor %}

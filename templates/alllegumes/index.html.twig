@@ -6,10 +6,10 @@
 {% block main %}
 {#    <h1>Alllegumes index</h1>#}
     <h1>Liste des legumes</h1>
-    <div id="listMois" class="listmois">
-        <ul>
+    <div id="listMois" class="listmois row">
+        <ul class="col-12">
             {% for alllegume in alllegumes %}
-                <li>
+                <li class="col-2">
                     <a href="{{ path('alllegumes_show', {'id': alllegume.id}) }}">{{ alllegume.nom }}</a>
                 </li>
             {% endfor %}

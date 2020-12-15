@@ -4,15 +4,15 @@
 
 {% block main %}
 {#    <h1>Mois index</h1>#}
-    <h1>CALENDRIER {{ mois|length }}</h1>
+    <h1>Calendrier des fruits et légumes</h1>
     <div>
         <p>
             Les legumes par mois
         </p>
-        <div id="listMois" class="listmois">
-            <ul>
+        <div id="listMois" class="listmois row">
+            <ul class="text-center">
                 {% for moi in mois %}
-                    <li id="{{ moi.nom }}">
+                    <li class="col-3" id="{{ moi.nom }}">
                         <a href="{{ path('mois_show', {'id': moi.id}) }}">{{ moi.nom }}</a>
                     </li>
                 {% endfor %}

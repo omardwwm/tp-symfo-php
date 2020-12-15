@@ -13,17 +13,20 @@
     font-size: 2rem;
     text-align: center;
     background-color: #FFFFFF;
-    display: block;
+    /*display: block;*/
+    border-radius: 5px;
 }
 p{
     color: #000000;
     font-size: 1.2rem;
-    background: #FFFFFF;
+    background: #d7cbcb;
     display: inline-block;
+    padding: 0 5px;
 }
 #header ul{
     display:flex;
     justify-content:center;
+    margin: auto;
 }
 #header ul li{
     margin:20px;
@@ -34,20 +37,22 @@ a{
     font-size: 1.08rem;
     text-decoration: none;
 }
+a:hover{
+    color: #4ff00a;
+    font-weight: bold;
+}
 #picPanier{
     width: 90%;
     height: 500px;
     /*border: 1px solid #4922e2;*/
     margin: auto;
 }
-.listmois{
-    display: flex;
-    flex-wrap: wrap;
-
-}
+/*.listmois{*/
+/*    display: inline-block;*/
+/*}*/
 .listmois ul li{
-    width: 100px;
-    height: 100px;
+    /*width: 100px;*/
+    height: 80px;
     display: inline-block;
     border: 1px solid #38d19e;
     justify-content: center;
@@ -67,6 +72,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.85;
+    padding: 10px;
 }
 .bgColorHiver{
     /*background-color: #4f4b4b;*/
@@ -75,6 +81,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.85;
+    padding: 10px;
 }
 .bgColorPrintemps{
     /*background-color: #a3b453;*/
@@ -83,6 +90,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.75;
+    padding: 10px;
 }
 .bgColorAutomne{
     /*background-color: #d0b055;*/
@@ -91,19 +99,19 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.85;
+    padding: 10px;
 }
-#footer{
+.footer{
     background-color: #38d19e;
     justify-content: space-between;
     align-items: center;
     text-align: center;
 }
-.fa-carrot{
+.fa-lemon{
     font-size: 3rem;
-    color: #e48646;
+    color: #eeb929;
     display: inline-block;
 }
 #pFooter{
-    display: inline-block;
     text-align: center;
 }
