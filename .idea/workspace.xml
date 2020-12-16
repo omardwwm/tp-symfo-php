@@ -109,6 +109,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lG1VElIA0uo8ueFqpJ9EJReUPj" />
@@ -135,7 +136,7 @@
       <updated>1607208636619</updated>
       <workItem from="1607208638562" duration="54994000" />
       <workItem from="1607328155391" duration="14661000" />
-      <workItem from="1608026358675" duration="21386000" />
+      <workItem from="1608026358675" duration="22156000" />
     </task>
     <servers />
   </component>
